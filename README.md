@@ -8,7 +8,7 @@ git config help
 
 ### Ajout de fichier
 ```
-git add {file}
+git add <file>
 git add .
 ```
 
@@ -20,24 +20,27 @@ git satus
 ### Mettre en staging
 ```
 git add .
-git commi -m 'message'
+git commit -m 'message'
 ```
 **Tips**
 ```
 git commit -a -m 'message
 ```
-
+### Revenir en arrière
+```
+git checkout <id commit> <file>
+```
 ### Création de branche
 ```
-git checkout -b {nom de la branche}
+git checkout -b <nom de la branche>
 ```
 ### Changement de branche
 ```
-git checkout {branch}
+git checkout <branch>
 ```
 ### Revenir à la branche précedente
 ```
-git checkut -
+git checkout -
 ```
 
 ### Voir les logs => afficher les derniers commits
@@ -55,4 +58,5 @@ git diff <commit>           # comparera l'état actuel au commit <commit>
 git diff <commit>..<commit> # Permet de comparer les fichier entre 2 commits
 ```
 
+### 
 
