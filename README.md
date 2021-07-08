@@ -2,13 +2,13 @@
 
 
 
-### ### Configuration
+### Configuration
 
 ```
 git config help
 ```
 
-### ### Ajout de fichier
+### Ajout de fichier
 
 ```
 git add <file>
@@ -17,13 +17,13 @@ or
 git add .
 ```
 
-### ### Status
+### Status
 
 ```
 git satus
 ```
 
-### ### Mettre en staging
+### Mettre en staging
 
 ```
 git add .
@@ -33,7 +33,7 @@ git commit -m 'message'
 ```
 git commit -a -m 'message
 ```
-### ### Revenir en arrière
+## Revenir en arrière
 
 ```
 git checkout <id commit> <file>
@@ -42,42 +42,8 @@ Au lieu de supprimer le commit de l’historique du projet, elle détermine comm
 ```
 git revert
 ```
-### ### Création de branche
 
-```
-git checkout -b <nom de la branche>
-```
-### ### Changement de branche
-
-```
-git checkout <branch>
-```
-### ### Revenir à la branche précedente
-
-```
-git checkout -
-```
-
-### ### Voir les logs => afficher les derniers commits
-
-```
-git log
-```
-### ### Voir les différence sur un fichier
-
-En revanche si on veut comparer en partant de ce qui est stage il faudra rajouter —cachedou —staged
-```
-git diff
-```
-### ### Comparer des commits
-
-```
-git diff <commit>           # comparera l'état actuel au commit <commit>
-git diff <commit>..<commit> # Permet de comparer les fichier entre 2 commits
-```
-
-
-### ### Reset
+### Reset
 
 Comme si nous n’avions pas mis en staging le fichier
 ```
@@ -93,4 +59,44 @@ via le mode —hard => ATTENTION pas possible de revenir sur la commande
 ```
 git reset --hard
 ```
-  
+### Revenir en arrière d'un cran
+```
+git reset HEAD^ --mixed
+#chaque ^ correspond à un cran
+```
+
+### Création de branche
+
+```
+git checkout -b <nom de la branche>
+```
+### Changement de branche
+
+```
+git checkout <branch>
+```
+### Revenir à la branche précedente
+
+```
+git checkout -
+```
+
+### Voir les logs => afficher les derniers commits
+
+```
+git log
+```
+### Voir les différence sur un fichier
+
+En revanche si on veut comparer en partant de ce qui est stage il faudra rajouter —cachedou —staged
+```
+git diff
+```
+### Comparer des commits
+
+```
+git diff <commit>           # comparera l'état actuel au commit <commit>
+git diff <commit>..<commit> # Permet de comparer les fichier entre 2 commits
+```
+
+
